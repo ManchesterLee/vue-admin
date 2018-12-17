@@ -16,8 +16,8 @@
 </template>
 
 <script>
-  import { requestLogin } from '../api/api';
-  //import NProgress from 'nprogress'
+    import {requestLogin} from '../api/api';
+    //import NProgress from 'nprogress'
   export default {
     data() {
       return {
@@ -62,7 +62,7 @@
                 });
               } else {
                 sessionStorage.setItem('user', JSON.stringify(user));
-                this.$router.push({ path: '/table' });
+                  this.$router.push({path: '/config'});
               }
             });
           } else {
